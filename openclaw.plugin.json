@@ -1,0 +1,23 @@
+{
+  "id": "parallel-search",
+  "name": "Parallel Search",
+  "description": "Parallel web search via DataForSEO + Brave with result fusion",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "dataforseoLogin": { "type": "string" },
+      "dataforseoPassword": { "type": "string" },
+      "braveApiKey": { "type": "string" },
+      "defaultLanguage": { "type": "string", "default": "fr" },
+      "defaultCountry": { "type": "string", "default": "France" },
+      "defaultDepth": { "type": "number", "default": 10 }
+    }
+  },
+  "uiHints": {
+    "dataforseoLogin": { "label": "DataForSEO Login", "sensitive": false },
+    "dataforseoPassword": { "label": "DataForSEO Password", "sensitive": true },
+    "braveApiKey": { "label": "Brave API Key", "sensitive": true }
+  }
+}
