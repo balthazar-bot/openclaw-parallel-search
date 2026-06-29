@@ -3,6 +3,9 @@
   "name": "Parallel Search",
   "description": "Parallel web search via DataForSEO + Brave with result fusion",
   "version": "1.0.0",
+  "contracts": {
+    "tools": ["parallel_search"]
+  },
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
